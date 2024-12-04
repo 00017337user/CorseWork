@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <title>Apply</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="images/16976310475940.png" alt="Logo_of_UzSWLU"></a>
+            <div class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li><a href="AboutUni.html" class="uni">University</a></li>
+                    <li><a href="Applicants.html" class="aplication">Applicants</a></li>
+                    <li><a href="Faculties.html" class="faculties">Faculties</a></li>
+                    <li><a href="Apply.html" class="apply">Apply</a></li>
+                    <li><a href="News.html" class="news">News</a></li>
+                    <li><a href="index.html" class="home">Home</a></li>
+                </ul>
+            </div>
+            <a href="" class="log"><img src="images/cources-icon.svg" alt="Icon_of_login"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+        <div class="overlay"></div>
+            <h1>Apply Now</h1>
+        </div>
+        <form onsubmit="handleSubmit(event)">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+    
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>   
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section university-info">
+                <h3>University</h3>
+                <ul>
+                    <li><a href="#">About the university</a></li>
+                    <li><a href="#">Rectorate</a></li>
+                    <li><a href="#">Structure</a></li>
+                    <li><a href="#">University Charter</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Faculties and departments</a></li>
+                    <li><a href="#">History of higher education institution</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">University Education Policy</a></li>
+                    <li><a href="#">University Library</a></li>
+                    <li><a href="#">Youth Union</a></li>
+                </ul>
+            </div>
+            <div class="footer-section entrants-info">
+                <h3>Entrants</h3>
+                <ul>
+                    <li><a href="#">Why this University</a></li>
+                    <li><a href="#">Payment contracts</a></li>
+                    <li><a href="#">Note to students</a></li>
+                    <li><a href="#">Alumni Club</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">International Cooperation</a></li>
+                    <li><a href="#">Rector's greeting</a></li>
+                    <li><a href="#">Our partners</a></li>
+                    <li><a href="#">About Tashkent</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact-info">
+                <h3>Contact</h3>
+                <p>Uchtepa District, Kichik Khalka Yoli Street, District G-9a, House 21, Tashkent, Uzbekistan</p>
+                <p>Email: uzdjtu@uzswlu.uz, uzgumya@exat.uz, uzgumya1@exat.uz, uzdjtu_d@edu.uz, uzswluranking@gmail.com, international@uzswlu.uz, uzdjtu_xalqaro@edu.uz<a href="mailto:uzdjtu@uzswlu.uz"></a></p>
+                <p>Phone:  +998 (71) 230-12-91<a href="tel:+998712301291"></a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 UzSWLU. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Successfully sent!');
+            document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>
